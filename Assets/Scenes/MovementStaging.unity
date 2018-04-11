@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 193671912}
   - component: {fileID: 193671911}
   - component: {fileID: 193671915}
+  - component: {fileID: 193671916}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -218,6 +219,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  input: 
+--- !u!114 &193671916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 193671910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b1f160464932a42a1c2fac90f275a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1227013203
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +310,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1487620390
 GameObject:
@@ -331,6 +344,11 @@ MonoBehaviour:
     offValue: 0
     button: 0
     condition: 0
+  - axisName: Horizontal
+    offValue: 0
+    button: 1
+    condition: 1
+  inputState: {fileID: 193671916}
 --- !u!4 &1487620392
 Transform:
   m_ObjectHideFlags: 0
@@ -342,5 +360,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
