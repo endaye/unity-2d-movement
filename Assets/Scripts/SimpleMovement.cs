@@ -20,6 +20,5 @@ public class SimpleMovement : MonoBehaviour
     {
         var val = Input.GetAxis("Horizontal");
         body2d.velocity = new Vector2(speed * val, body2d.velocity.y);
-        Debug.Log(val);
     }
 }
