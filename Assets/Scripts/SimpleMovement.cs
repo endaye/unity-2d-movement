@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(InputState), typeof(Rigidbody2D))]
 public class SimpleMovement : MonoBehaviour
 {
 

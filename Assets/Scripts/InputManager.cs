@@ -5,7 +5,11 @@ using UnityEngine;
 public enum Buttons
 {
     Right,
-    Left
+    Left,
+    Up,
+    Down,
+    A,
+    B
 }
 
 public enum Condition
@@ -34,7 +38,6 @@ public class InputAxisState
                 case Condition.LessThan:
                     return val < offValue;
             }
-
             return false;
         }
     }
