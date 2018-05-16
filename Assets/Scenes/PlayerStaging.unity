@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 1376272228}
   - component: {fileID: 1376272226}
   - component: {fileID: 1376272227}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,6 +361,7 @@ GameObject:
   - component: {fileID: 2144944008}
   - component: {fileID: 2144944009}
   - component: {fileID: 2144944010}
+  - component: {fileID: 2144944011}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -517,6 +518,7 @@ MonoBehaviour:
   InputButtons: 000000000100000004000000
   speed: 50
   runMutiplier: 2
+  running: 0
 --- !u!114 &2144944010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,3 +530,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65cf20670c21b1040b2876093a2ba031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2144944011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2144944001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5844a2e3a8dace645b87bb916bc9ca93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  standing: 0
+  bottomPosition: {x: 0, y: -9}
+  collisionRadius: 10
