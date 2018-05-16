@@ -28,8 +28,7 @@ public class InputAxisState
 
     public bool value
     {
-        get
-        {
+        get {
             var val = Input.GetAxis(axisName);
             switch (condition)
             {
@@ -49,16 +48,18 @@ public class InputManager : MonoBehaviour
     public InputAxisState[] inputs;
     public InputState inputState;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	    foreach (var input in inputs)
-	    {
-	        inputState.SetButtonValue(input.button, input.value);
-	    }
-	}
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        foreach (var input in inputs)
+        {
+            inputState.SetButtonValue(input.button, input.value);
+        }
+    }
 }
