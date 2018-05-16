@@ -568,3 +568,5 @@ MonoBehaviour:
   jumpSpeed: 200
   jumpDelay: 0.1
   jumpCount: 2
+  dustEffectPrefab: {fileID: 1908849207405264, guid: 3ad8840a200dd9146b872aa12895c901,
+    type: 2}
