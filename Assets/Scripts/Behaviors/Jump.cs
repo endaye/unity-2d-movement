@@ -14,7 +14,7 @@ public class Jump : AbstractBehavior
     protected int jumpRemaining = 0;
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         var canJump = inputState.GetButtonValue(InputButtons[0]);
         var holdTime = inputState.GetButtonHoldTime(InputButtons[0]);
