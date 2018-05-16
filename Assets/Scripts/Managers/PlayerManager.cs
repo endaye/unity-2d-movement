@@ -31,6 +31,11 @@ public class PlayerManager : MonoBehaviour
             ChangeAnimationState(1);
         }
 
+        if (inputState.absVelY > 0)
+        {
+            ChangeAnimationState(2);
+        }
+
         animator.speed = walkBehavior.running ? walkBehavior.runMutiplier : 1f;
     }
 
