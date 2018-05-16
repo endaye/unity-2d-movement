@@ -566,3 +566,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputButtons: 05000000
   jumpSpeed: 200
+  jumpDelay: 0.1
+  jumpCount: 2

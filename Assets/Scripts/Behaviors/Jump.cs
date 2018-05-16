@@ -6,12 +6,11 @@ public class Jump : AbstractBehavior
 {
 
     public float jumpSpeed = 200f;
+    public float jumpDelay = .1f;
+    public int jumpCount = 2;
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
+    protected float lastJumpTime = 0;
+    protected int jumpRemaining = 0;
 
     // Update is called once per frame
     void Update()
@@ -22,7 +21,16 @@ public class Jump : AbstractBehavior
         {
             if (canJump && holdTime < .1f)
             {
+                jumpRemaining = jumpCount - 1;
                 OnJump();
+            }
+        }
+        else
+        {
+            if (canJump && holdTime < .1f && Time.time - lastJumpTime > jumpDelay && jumpRemaining > 0)
+            {
+                OnJump();
+                jumpRemaining--;
             }
         }
     }
@@ -30,8 +38,7 @@ public class Jump : AbstractBehavior
     protected virtual void OnJump()
     {
         var vel = body2d.velocity;
-
+        lastJumpTime = Time.time;
         body2d.velocity = new Vector2(vel.x, jumpSpeed);
-
     }
 }
