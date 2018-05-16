@@ -157,6 +157,10 @@ MonoBehaviour:
     offValue: 0
     button: 5
     condition: 0
+  - axisName: Vertical
+    offValue: 0
+    button: 3
+    condition: 1
   inputState: {fileID: 2144944007}
 --- !u!4 &932405284
 Transform:
@@ -368,6 +372,7 @@ GameObject:
   - component: {fileID: 2144944011}
   - component: {fileID: 2144944012}
   - component: {fileID: 2144944013}
+  - component: {fileID: 2144944014}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -592,3 +597,18 @@ MonoBehaviour:
   longJumpMultiplier: 1.2
   canLongJump: 0
   isLongJumping: 0
+--- !u!114 &2144944014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2144944001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36cc82bdc6f16a641ba37df69e5b20bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InputButtons: 03000000
+  scale: 0.5
+  ducking: 0
+  centerOffsetY: 0
