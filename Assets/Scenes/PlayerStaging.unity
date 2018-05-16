@@ -354,6 +354,7 @@ GameObject:
   - component: {fileID: 2144944006}
   - component: {fileID: 2144944005}
   - component: {fileID: 2144944007}
+  - component: {fileID: 2144944008}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -481,3 +482,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74b1f160464932a42a1c2fac90f275a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2144944008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2144944001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc915b367ab72a7488f79fd85d3898bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InputButtons: 0000000001000000
