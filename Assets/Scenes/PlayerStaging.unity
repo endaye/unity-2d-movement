@@ -153,6 +153,10 @@ MonoBehaviour:
     offValue: 0
     button: 4
     condition: 0
+  - axisName: Jump
+    offValue: 0
+    button: 5
+    condition: 0
   inputState: {fileID: 2144944007}
 --- !u!4 &932405284
 Transform:
@@ -362,6 +366,7 @@ GameObject:
   - component: {fileID: 2144944009}
   - component: {fileID: 2144944010}
   - component: {fileID: 2144944011}
+  - component: {fileID: 2144944012}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -548,3 +553,16 @@ MonoBehaviour:
   bottomPosition: {x: 0, y: -8.5}
   collisionRadius: 3
   debugCollisionColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &2144944012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2144944001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df8d14abf975e54ea0ff82790e0af98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InputButtons: 05000000
+  jumpSpeed: 200
