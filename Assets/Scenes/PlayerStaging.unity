@@ -149,6 +149,10 @@ MonoBehaviour:
     offValue: 0
     button: 1
     condition: 1
+  - axisName: Fire1
+    offValue: 0
+    button: 4
+    condition: 0
   inputState: {fileID: 2144944007}
 --- !u!4 &932405284
 Transform:
@@ -507,5 +511,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bff634745f4dfe488ad1a00e39c5241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InputButtons: 0000000001000000
+  InputButtons: 000000000100000004000000
   speed: 50
+  runMutiplier: 2
