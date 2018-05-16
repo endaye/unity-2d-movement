@@ -515,6 +515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputButtons: 0000000001000000
+  disableScripts: []
 --- !u!114 &2144944009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,6 +528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputButtons: 000000000100000004000000
+  disableScripts: []
   speed: 50
   runMutiplier: 2
   running: 0
@@ -571,6 +573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputButtons: 05000000
+  disableScripts: []
   jumpSpeed: 200
   jumpDelay: 0.1
   jumpCount: 2
@@ -588,6 +591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputButtons: 05000000
+  disableScripts: []
   jumpSpeed: 150
   jumpDelay: 0.1
   jumpCount: 2
@@ -609,6 +613,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputButtons: 03000000
+  disableScripts:
+  - {fileID: 2144944013}
+  - {fileID: 2144944009}
+  - {fileID: 2144944012}
   scale: 0.5
   ducking: 0
   centerOffsetY: 0

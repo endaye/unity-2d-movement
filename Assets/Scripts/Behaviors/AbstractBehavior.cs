@@ -6,6 +6,7 @@ public abstract class AbstractBehavior : MonoBehaviour
 {
 
     public Buttons[] InputButtons;
+    public MonoBehaviour[] disableScripts;
 
     protected InputState inputState;
     protected Rigidbody2D body2d;
@@ -18,15 +19,11 @@ public abstract class AbstractBehavior : MonoBehaviour
         collisionState = GetComponent<CollisionState>();
     }
 
-    // Use this for initialization
-    void Start()
+    protected virtual void ToggleScripts(bool value)
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        foreach (var script in disableScripts)
+        {
+            script.enabled = value;
+        }
     }
 }
