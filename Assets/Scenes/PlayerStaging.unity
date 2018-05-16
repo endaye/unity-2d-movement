@@ -545,5 +545,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   standing: 0
-  bottomPosition: {x: 0, y: -9}
-  collisionRadius: 10
+  bottomPosition: {x: 0, y: -8.5}
+  collisionRadius: 3
+  debugCollisionColor: {r: 1, g: 0, b: 0, a: 1}

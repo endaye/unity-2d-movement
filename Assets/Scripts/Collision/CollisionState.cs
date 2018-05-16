@@ -11,10 +11,7 @@ public class CollisionState : MonoBehaviour
     public Vector2 bottomPosition = Vector2.zero;
     public float collisionRadius = 10f;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public Color debugCollisionColor = Color.red;
 
     void FixedUpdate()
     {
@@ -25,8 +22,14 @@ public class CollisionState : MonoBehaviour
         standing = Physics2D.OverlapCircle(pos, collisionRadius, collisionLayer);
     }
 
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void OnDrawGizmos()
+    {
+        Gizmos.color = debugCollisionColor;
+
+        var pos = bottomPosition;
+        pos.x += transform.position.x;
+        pos.y += transform.position.y;
+
+        Gizmos.DrawWireSphere(pos, collisionRadius);
+    }
 }
