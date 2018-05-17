@@ -467,10 +467,8 @@ GameObject:
   - component: {fileID: 2144944009}
   - component: {fileID: 2144944010}
   - component: {fileID: 2144944011}
-  - component: {fileID: 2144944012}
   - component: {fileID: 2144944013}
   - component: {fileID: 2144944014}
-  - component: {fileID: 2144944015}
   - component: {fileID: 2144944016}
   m_Layer: 0
   m_Name: Player
@@ -663,24 +661,6 @@ MonoBehaviour:
   leftPosition: {x: -4, y: -5}
   collisionRadius: 3
   debugCollisionColor: {r: 1, g: 0, b: 0, a: 1}
---- !u!114 &2144944012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2144944001}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df8d14abf975e54ea0ff82790e0af98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InputButtons: 05000000
-  disableScripts: []
-  jumpSpeed: 200
-  jumpDelay: 0.1
-  jumpCount: 2
-  dustEffectPrefab: {fileID: 1908849207405264, guid: 3ad8840a200dd9146b872aa12895c901,
-    type: 2}
 --- !u!114 &2144944013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -718,25 +698,10 @@ MonoBehaviour:
   disableScripts:
   - {fileID: 2144944013}
   - {fileID: 2144944009}
-  - {fileID: 2144944012}
+  - {fileID: 0}
   scale: 0.5
   ducking: 0
   centerOffsetY: 0
---- !u!114 &2144944015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2144944001}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d9057d84132d9148ac277b08329c3c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InputButtons: 
-  disableScripts:
-  - {fileID: 2144944013}
-  onWallDetected: 0
 --- !u!114 &2144944016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,7 +713,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba28a28663e3e5499d6337511579f03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InputButtons: 
-  disableScripts: []
+  InputButtons: 03000000
+  disableScripts:
+  - {fileID: 2144944013}
   onWallDetected: 0
   slideVelocity: -5
+  slideMultiplier: 5
