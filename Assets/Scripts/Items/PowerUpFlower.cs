@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerUpFlower : Collectable {
+public class PowerUpFlower : Collectable
+{
+    public int itemID = 1;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    override protected void OnCollect(GameObject target)
+    {
+        var equipBehavior = target.GetComponent<Equip>();
+        if (equipBehavior != null)
+        {
+            equipBehavior.currentItem = itemID;
+        }
+    }
 }
