@@ -618,7 +618,7 @@ GameObject:
   - component: {fileID: 2144944012}
   - component: {fileID: 2144944015}
   - component: {fileID: 2144944017}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -915,3 +915,6 @@ MonoBehaviour:
   disableScripts: []
   shootDelay: 0.5
   projectilePrefab: {fileID: 0}
+  firePosition: {x: 9, y: -2}
+  debugColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  debugRadius: 3
