@@ -392,6 +392,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114802670628422526, guid: 219bb384297795e47849eef733e7ad29,
+        type: 2}
+      propertyPath: projectileProfab
+      value: 
+      objectReference: {fileID: 1237664127245068, guid: 7e0202804468bf24dbb125234fe0f22d,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 219bb384297795e47849eef733e7ad29, type: 2}
   m_IsPrefabParent: 0
@@ -611,6 +617,7 @@ GameObject:
   - component: {fileID: 2144944016}
   - component: {fileID: 2144944012}
   - component: {fileID: 2144944015}
+  - component: {fileID: 2144944017}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -893,3 +900,18 @@ MonoBehaviour:
   slideMultiplier: 5
   dustPrefab: {fileID: 1319075693207972, guid: 911e188da1e4859448ac58e10a732c46, type: 2}
   dustSpawnDelay: 0.2
+--- !u!114 &2144944017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2144944001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61188c4c02d4b0245a0e2e3e21ea8256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InputButtons: 04000000
+  disableScripts: []
+  shootDelay: 0.5
+  projectilePrefab: {fileID: 0}

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PowerUpFlower : Collectable
 {
     public int itemID = 1;
+    public GameObject projectileProfab;
 
     override protected void OnCollect(GameObject target)
     {
@@ -12,6 +13,13 @@ public class PowerUpFlower : Collectable
         if (equipBehavior != null)
         {
             equipBehavior.currentItem = itemID;
+        }
+
+        var shootBehavior = target.GetComponent<FireProjectile>();
+
+        if (shootBehavior != null)
+        {
+            shootBehavior.projectilePrefab = projectileProfab;
         }
     }
 }
