@@ -674,8 +674,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputButtons: 05000000
-  disableScripts: []
+  disableScripts:
+  - {fileID: 2144944009}
+  - {fileID: 2144944013}
+  - {fileID: 2144944016}
   jumpVelocity: {x: 50, y: 200}
+  jumpingOffWall: 0
+  resetDelay: 0.2
 --- !u!114 &2144944013
 MonoBehaviour:
   m_ObjectHideFlags: 0
