@@ -698,7 +698,6 @@ MonoBehaviour:
   disableScripts:
   - {fileID: 2144944013}
   - {fileID: 2144944009}
-  - {fileID: 0}
   scale: 0.5
   ducking: 0
   centerOffsetY: 0
@@ -719,3 +718,5 @@ MonoBehaviour:
   onWallDetected: 0
   slideVelocity: -5
   slideMultiplier: 5
+  dustPrefab: {fileID: 1319075693207972, guid: 911e188da1e4859448ac58e10a732c46, type: 2}
+  dustSpawnDelay: 0.2
