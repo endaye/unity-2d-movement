@@ -5,6 +5,7 @@ using UnityEngine;
 public class FireBall : MonoBehaviour {
 
     public Vector2 InitialVelVector2 = new Vector2(100f, -100f);
+    public int bounces = 3;
 
     private Rigidbody2D body2d;
 
@@ -19,9 +20,17 @@ public class FireBall : MonoBehaviour {
 	    var startVelX = InitialVelVector2.x * transform.localScale.x;
         body2d.velocity = new Vector2(startVelX, InitialVelVector2.y);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    void OnCollisionEnter2D(Collision2D target)
+    {
+        if (target.gameObject.transform.position.y < transform.position.y)
+        {
+            bounces--;
+        }
+
+        if (bounces <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
